@@ -1,0 +1,9 @@
+services: 
+  api-queue-skip-db:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=queue-skip-user
+      - POSTGRESQL_PASSWORD=queue-skip-pass
+      - POSTGRESQL_DATABASE=queue-skip-db
